@@ -1,40 +1,64 @@
 body {
     text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
 }
 
-.btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 2.5rem;
+h1 {
+    margin-top: 1.5rem;
 }
 
 .btn-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-.yellow {
-    background-color: #FFFF4C;
+.line-one, .line-two {
+    display: flex;
 }
 
-.red {
-    background-color: #FF4C4C;
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 8px solid black;
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.1s;
+    outline: none;
 }
 
-.blue {
-    background-color: #4C4CFF;
+.btn:active {
+    transform: scale(0.95);
 }
 
-.green {
-    background-color: #4CFF4C;
-}
+.yellow { background-color: #FFFF4C; }
+.red { background-color: #FF4C4C; }
+.blue { background-color: #4C4CFF; }
+.green { background-color: #4CFF4C; }
 
 .flash {
-    background-color: white;
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .userflash {
-    background-color: rgb(191, 160, 160);
+    opacity: 0.6;
+}
+
+#start-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #4CFF4C;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#start-btn:hover {
+    background-color: #3acc3a;
 }
